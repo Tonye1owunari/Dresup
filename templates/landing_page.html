@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dresup</title>
+
+    <!--css here-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" async>
+    <link rel="stylesheet" href="/static/landing.css" async>
+    
+</head>
+<body>
+  <div class="nav">
+    <img src="/static/foodicon.jpg" width="100" height="40">
+    <ul class="nav-list">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="http://127.0.0.1:5000/shop">Shop</a></li>
+        <li><a href="#"><i class="fa fa-shopping-cart"></i> <span id="cart-icon">Cart</span></a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#" class="sign-up">Sign up</a></li>
+    </ul>
+  </div>
+
+  <header>
+    <div class="text-box">
+      <p class="welcome">Welcome to</p>
+      <h2 class="best">DRES<span>UP</span></h2>
+      <p class="slogan">Your number one online fashion store in Rivers State...</p>
+    </div>
+
+    <form method="POST" action="/shop">
+        <h2>Login</h2>
+        <hr style="color: rgb(207, 0, 76);">
+        <label>
+            <p>Username or email:</p>
+            <input type="text" placeholder="example@mail.com" name="user_name">
+        </label>
+        <label>
+            <p>Password:</p>
+            <input type="password" placeholder="********" name="user_password">
+        </label>
+        <input type="submit" value="Log in">
+        <p><a href="#">Forgot password?</a></p>
+    </form>
+
+  </header>
+
+</body>
+</html>

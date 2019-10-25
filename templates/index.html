@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dresup</title>
+
+    <!--css here-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" async>
+    <link rel="stylesheet" href="/static/rest-style.css" async>
+    
+</head>
+<body>
+  <div class="nav">
+    <img src="/static/foodicon.jpg" width="100" height="40">
+    <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="active">{{ customer }}</a></li>
+        <li><a href="#"><i class="fa fa-shopping-cart"></i> <span id="cart-icon">Cart</span></a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="http://127.0.0.1:5000/" class="sign-up">Sign out</a></li>
+    </ul>
+  </div>
+
+  <header>
+    <div class="text-box">
+      <p class="welcome">Welcome to</p>
+      <h2 class="best">DRES<span>UP</span></h2>
+      <p class="slogan">Your number one online fashion store in Rivers State...</p>
+      <button class="headerBtn">Latest arrivals</button>
+    </div>
+  </header>
+
+  <!---------------------categories start---------------------------------------------------------------------->
+  <div class="categories">
+    <strong>Categories</strong>
+    <ul>
+      <li><button>Shirts<span>></span></button></li>
+      <li><button>Gowns<span>></span></button></li>
+      <li><button>Trousers<span>></span></button></li>
+      <li><button>Shoes<span>></span></button></li>
+      <li><button>Accessories<span>></span></button></li>
+      <li><button>Bags<span>></span></button></li>
+      <li><button>Culture fits<span>></span></button></li>
+      <li><button>Shorts<span>></span></button></li>
+    </ul>
+  </div>
+  <!---------------------categories stop---------------------------------------------------------------------->
+
+  <h3 id="items-title">Most popular</h3>
+  <div id="root">
+    <main class="row1">
+      <div class="items-block">
+        <div class="food-img">
+          <img src="/static/shirts/1.jpg">
+        </div>
+        <div class="price-and-btn">
+          <p><span>H&M classic</span><br>
+            <span>$27.00</span></p>
+          <button id="one" class="purchaseBtn">add to cart</button>
+        </div>
+      </div>
+      <!------------------------------------------------------------------------------------------------------------>
+      <div class="items-block">
+        <div class="food-img">
+          <img src="/static/shirts/2.jpg">
+        </div>
+        <div class="price-and-btn">
+          <p><span>blue casual</span><br>
+            <span>$10.00</span></p>
+          <button id="two" class="purchaseBtn">add to cart</button>
+        </div>
+      </div>
+      <!------------------------------------------------------------------------------------------------------------>
+      <div class="items-block">
+          <div class="food-img">
+            <img src="/static/shirts/3.jpg">
+          </div>
+          <div class="price-and-btn">
+            <p><span>navy rayshirt</span><br>
+              <span>$9.00</span></p>
+            <button id="three" class="purchaseBtn">add to cart</button>
+          </div>
+      </div>
+    </main>
+
+    <main class="row2">
+        <div class="items-block">
+          <div class="food-img">
+            <img src="/static/shirts/4.jpg">
+          </div>
+          <div class="price-and-btn">
+            <p><span>patterned flanel</span><br>
+              <span>$5.00</span></p>
+            <button id="four" class="purchaseBtn">add to cart</button>
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------>
+        <div class="items-block">
+          <div class="food-img">
+            <img src="/static/shirts/5.jpg">
+          </div>
+          <div class="price-and-btn">
+            <p><span>horseblood flanel</span><br>
+                <span>$7.00</span></p>
+            <button id="five" class="purchaseBtn">add to cart</button>
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------>
+        <div class="items-block">
+            <div class="food-img">
+              <img src="/static/shirts/6.jpg">
+            </div>
+            <div class="price-and-btn">
+              <p><span>joe's dress-shirts</span><br>
+                <span>$7.00</span></p>
+              <button id="six" class="purchaseBtn">add to cart</button>
+            </div>
+        </div>
+    </main>
+  </div>
+
+<!--------------------------------------purchase area start---------------------------------------------------------------------->
+  <table></table>
+  
+  <div class="checkout">
+    <p><strong>TOTAL</strong> = $<span id="total">0.00</span></p>
+    <a href="#">Proceed to checkout</a>
+  </div>
+
+<span class="test"></span>
+
+  <footer>
+    <hr>
+    <img src="/static/foodicon.jpg" width="150" height="80">
+    <ul class="bottom-nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+    <p id="copy-right">2019 copyright&copy; Tammie</p>
+  </footer>
+
+
+
+  <!--js here-->
+  <script src="/static/cart.js" async></script>
+  <script src="/static/categories.js" async></script>
+  
+</body>
+</html>

@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.nav{
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+}
+.nav img{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    margin: 0;
+}
+.nav .nav-list{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+}
+.nav .nav-list li{
+    display: inline;    
+}
+.nav .nav-list li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 12px;
+    color: rgb(209, 5, 97);
+}
+.nav .nav-list li a.sign-up{background: rgb(255, 0, 43); color: white;}
+.nav .nav-list li a.sign-up:hover{background: rgb(255, 141, 160);}
+.nav .nav-list li a:hover{background: gray; color: white;}
+.nav .nav-list li a.active{background: gray; color: white;}
+.cartIcon{
+    background: rgb(136, 0, 41);
+    color: white;
+    border-radius: 7px;
+    padding: 1px 4px;
+}
+header{
+    background-image: url('bcg-img/bcg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.5;
+    text-align: center;
+    animation: a1 10s infinite;
+}
+@keyframes a1{
+    0%{background-image: url('bcg-img/bcg-1.jpg');}
+    35%{background-image: url('bcg-img/bcg-2.jpg');}
+    70%{background-image: url('bcg-img/bcg-4.jpg');}
+    100%{background-image: url('bcg-img/bcg-1.jpg');}
+}
+.welcome{
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(230, 5, 136);
+}
+.best{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.best span{color: rgb(255, 1, 115);}
+.slogan{
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.headerBtn{
+    cursor: pointer;
+    padding: 10px 24px;
+    background: rgb(131, 251, 199);
+    margin-top: 40px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.headerBtn:hover{
+    background: linear-gradient(to right,powderblue,white,rgb(131, 251, 199));
+}
+
+/*----------------------------categories start---------------------------------------------*/
+.categories{
+    width: 20%;
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding: 10px 0px 0px 0px;
+}
+.categories strong{
+    background: rgb(0, 20, 34);
+    color: white;
+    padding: 4px 30px;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.5);
+    font-size: 14px;
+}
+.categories ul li{
+    list-style-type: none;
+    margin: 0;
+}
+.categories ul li button{
+    padding: 14px;
+    background: none;
+    border-top: 1px solid black;
+    width: 100%;
+    outline: none;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.categories ul li button:hover{
+    background: rgb(212, 212, 212);
+}
+.categories ul li button span{
+    float: right;
+}
+/*----------------------------categories stop--------------------------------------------*/
+
+/*------------------------------------------items area--------------------------------*/
+#items-title{
+    margin: 3% 0 0 32%;
+}
+main{
+    width: 60%;
+    margin: 2% 5% 1% 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.food-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.price-and-btn p{
+    margin: 0;
+}
+.purchaseBtn{
+    padding: 5px 10px;
+    background: rgb(26, 26, 26);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.purchaseBtn:active{
+    box-shadow: none;
+}
+
+/*------------------------------------------visible purchase--------------------------------*/
+table{
+    background: rgb(100, 0, 45);
+    margin-top: 3%;
+}
+table th{color: white;}
+table td{
+    padding: 5px;
+    width: 30%;
+    background: white;
+    text-align: center;
+}
+.item-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.remove-btn{
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.remove-btn:active{
+    box-shadow: none;
+}
+.checkout{
+    margin-left: 20px; 
+    width: 50%;
+    padding-bottom: 10px;
+}
+.checkout a{
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+.checkout a:hover{
+    box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.5);
+}
+.checkout a:active{
+    box-shadow: none;
+}
+
+
+/*------------------------------------------footer--------------------------------*/
+footer{
+    width: 100%;
+    height: 50vh;
+    color: black;
+    position: relative;
+}
+.bottom-nav-list{
+    list-style-type: none;
+}
+.bottom-nav-list a{
+    text-decoration: none;
+}
+#copy-right{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
